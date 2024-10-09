@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".infra.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_button"
+        android:background="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:paddingTop="62dp"
+        android:paddingBottom="22dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_all"
+            android:src="@drawable/all_inclusive_24"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp"/>
+        <ImageView
+            android:id="@+id/image_happy"
+            android:src="@drawable/happy_24"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp"/>
+        <ImageView
+            android:id="@+id/image_sunny"
+            android:src="@drawable/sunny_24"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/menu_button"
+        android:id="@+id/hello_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingHorizontal="10dp"
+        android:textSize="18sp"
+        android:text="@string/selecione_uma_das_categorias_e_clique_em_nova_frase"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_primary"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_below="@id/text"/>
+
+    <Button
+        android:id="@+id/button_new_phrase"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/nova_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"/>
+
+</RelativeLayout>
