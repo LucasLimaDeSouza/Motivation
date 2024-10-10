@@ -8,4 +8,5 @@
   <li>data class</li>
   <li>Random.nextInt</li>
   <li>setColorFilter</li>
+  <li>Internacionalização de dados e strings</li>
 </ul>
